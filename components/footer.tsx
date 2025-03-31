@@ -1,5 +1,5 @@
-import { Instagram, Github, Twitter, Heart } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Instagram, Github, Twitter, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   return (
@@ -40,18 +40,12 @@ export default function Footer() {
           <div className="space-y-3">
             <h3 className="font-medium">Connect</h3>
             <div className="flex space-x-3">
-              <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full">
-                <Instagram className="h-4 w-4" />
-                <span className="sr-only">Instagram</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full">
-                <Twitter className="h-4 w-4" />
-                <span className="sr-only">Twitter</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full">
-                <Github className="h-4 w-4" />
-                <span className="sr-only">GitHub</span>
-              </Button>
+              <a href="https://github.com/nitinmahala" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full">
+                  <Github className="h-4 w-4" />
+                  <span className="sr-only">GitHub</span>
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -64,6 +58,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
